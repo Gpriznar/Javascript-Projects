@@ -1,0 +1,25 @@
+#assignmentboxtext{
+  color: grey;
+  width: 200px;
+  text-align: center;
+  border-style: solid;
+}
+
+#addtask{
+  background-color: #34A5DA;
+  color: white;
+  border-style: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+li {
+  margin: 2%;
+  padding: 25px;
+  display: flex;
+  list-style: none;
+  background-color: #34A5DA;
+  color: white;
+}
