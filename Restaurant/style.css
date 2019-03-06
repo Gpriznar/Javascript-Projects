@@ -1,0 +1,48 @@
+#dishUL {
+  list-style: none;
+}
+
+#dishUL li {
+  display: flex;
+  padding: 10px;
+  float:left;
+  color: white;
+
+}
+
+#dishUL h1 {
+  margin-left: 5%;
+}
+
+#dishUL h3 {
+  margin-left: 5%;
+  font-size: 24px;
+}
+
+#dishUL p {
+  margin-left: 5%;
+}
+
+body {
+  background-image: url("media/cb.jpeg")
+}
+
+#menutitle {
+  color: white;
+  margin-left: 38%
+}
+
+#menutitletext {
+  margin-left: 13%;
+  color: white;
+  font-size: 20px;
+}
+
+#menucategory {
+  color: white;
+  margin-left: 47%;
+}
+
+#coursebutton {
+  margin-left: 45%;
+}
