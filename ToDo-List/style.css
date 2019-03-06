@@ -1,6 +1,7 @@
 #assignmentboxtext{
   color: grey;
   width: 200px;
+  height: 25px;
   text-align: center;
   border-style: solid;
 }
@@ -13,13 +14,30 @@
   padding-right: 15px;
   padding-top: 3px;
   padding-bottom: 3px;
+  height: 25px;
 }
 
 li {
-  margin: 2%;
-  padding: 25px;
+  margin: auto;
+  padding: 10px;
   display: flex;
+  justify-content: space-between;
   list-style: none;
   background-color: #34A5DA;
   color: white;
+}
+
+#container {
+  margin: auto;
+  width: 25%;
+  padding-top: 100px;
+  font-size: 20px;
+  text-align: center;
+  color: grey;
+  font-weight: normal;
+}
+
+#taskbar {
+  display: flex;
+  justify-content: space-between;
 }
