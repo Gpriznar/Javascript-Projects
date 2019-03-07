@@ -1,0 +1,30 @@
+#newstitlebox {
+display: column;
+text-align: center;
+font-size: 45px;
+}
+
+#globe {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+#flag {
+  float: right;
+  width: 150px;
+  height: 75px;
+}
+
+#newsul li {
+  display: column;
+  list-style: none;
+}
+
+#newsul img {
+  width: 250px;
+  height: 200px;
+}
+
+body {
+  background-color: #D4D4D4;
+}
