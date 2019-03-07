@@ -9,3 +9,7 @@ ToDo-List: Application that takes user input and assigns it to a pending task li
     - Updates to CSS and layout need still need to be completed
 
 Restaurant: Mock restaurant website in order to practice Javascript functions .map .filter
+
+News App: Website to further .map functions as well as css layout. 
+   
+    - Update null values with better placeholders
