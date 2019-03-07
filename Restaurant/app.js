@@ -5,9 +5,10 @@ let liItems = dishes.map(function(dish) {
   return `<li>
           <img src =${dish.imageURL}>
           <h1> ${dish.title} </h1>
-          <p> ${dish.description}</p>
-          <h3>Price: ${dish.price} </h3>
+          <span> ${dish.description}</span>
+          <h3> Price: $${dish.price} </h3>
           </li>`
+
 })
 
 dishUL.innerHTML = liItems.join('')
@@ -25,7 +26,7 @@ let starters = dishes.map(function(dish) {
                 <img src =${dish.imageURL}>
                 <h1> ${dish.title} </h1>
                 <p> ${dish.description}</p>
-                <h3> ${dish.price} </h3>
+                <h3> Price: $${dish.price} </h3>
                 </li>`
 }})
 
@@ -42,7 +43,7 @@ let entrees = dishes.map(function(dish){
               <img src =${dish.imageURL}>
               <h1> ${dish.title} </h1>
               <p> ${dish.description}</p>
-              <h3> ${dish.price} </h3>
+              <h3> Price: $${dish.price} </h3>
               </li>`
 
 }})
@@ -61,7 +62,7 @@ let desserts = dishes.map(function(dish) {
               <img src =${dish.imageURL}>
               <h1> ${dish.title} </h1>
               <p> ${dish.description}</p>
-              <h3> ${dish.price} </h3>
+              <h3> Price: $${dish.price} </h3>
               </li>`
 }})
 
