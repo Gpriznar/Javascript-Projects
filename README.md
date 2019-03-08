@@ -12,4 +12,4 @@ Restaurant: Mock restaurant website in order to practice Javascript functions .m
 
 News App: Website to further .map functions as well as css layout. 
    
-    - Update null values with better placeholders
+    - Update null values with better placeholders. Reconsider using bootstrap to style news items.
