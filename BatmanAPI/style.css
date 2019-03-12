@@ -1,0 +1,46 @@
+#movieUL {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 7px;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #F5F5F5;
+  margin-top: 1px;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+#movieUL img {
+  height: 125px;
+  width: 80px;
+
+}
+
+#titlecontainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #F5F5F5;
+}
+
+#titlecontainer input {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  outline-style: none;
+}
+
+#largemovieUL {
+
+  display: column;
+  list-style: none;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+
+}
