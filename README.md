@@ -17,3 +17,5 @@ News App: Website to further .map functions as well as css layout.
 BatmanAPI: Practice website using OMDb API in order to display batman related movies. 
 
     - Future updates would include more styling via CSS and possibly interactions via JQuery
+    
+CoffeeShop: Practice website using an API in order to create, delete and search for orders using Get and Fetch functions.
