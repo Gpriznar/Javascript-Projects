@@ -14,8 +14,12 @@ News App: Website to further .map functions as well as css layout.
    
     - Update null values with better placeholders. Reconsider using bootstrap to style news items.
     
-BatmanAPI: Practice website using OMDb API in order to display batman related movies. 
+BatmanAPI: Website using OMDb API in order to display batman related movies. 
 
     - Future updates would include more styling via CSS and possibly interactions via JQuery
     
-CoffeeShop: Practice website using an API in order to create, delete and search for orders using Get and Fetch functions.
+CoffeeShop: Website using an API in order to create, delete and search for orders using Get and Fetch functions.
+
+GroceryApp: Website using a custom firebase API to help create and manage shopping lists for various grocery stores. 
+
+    - Future updates would include a user login/password to save stored information and the ability to add items to specific       stores.
