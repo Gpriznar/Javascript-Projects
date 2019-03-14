@@ -1,0 +1,65 @@
+<html lang="en" dir="ltr">
+
+<head>
+
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"></link>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+
+  <style>
+  h1  {
+font-family: 'Rock Salt', cursive;
+}</style>
+<!-- Banner -->
+<div id = "titlebannerbox">
+  <h1 id = "title"> Grocery Shopper </h1>
+  </div>
+  <hr>
+
+<!-- Add or Delete Store  -->
+<div id = "addordeletebox">
+  <h2> Add or Delete Store </h2>
+  <input id = "storenameinput" type="text" placeholder="Store Name">
+  <button id = "btnadd" type="submit"> Add </button>
+  <ul id = "searchresultUL">
+    </ul>
+  </div>
+  <br>
+
+<!-- View All Stores -->
+<div id = "viewstoresbox">
+  <div id ="viewstoresboxcontent">
+  <h2  id = "viewstorestitle"> View All Stores <h2>
+    <input type="image" src="media/cart.svg" id="btnicon"><br><br>
+    <ul id = "allstoresUL">
+    </ul>
+    </div>
+<div>
+
+
+</body>
+
+<!-- Scripts  -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDLJ9dyxrMzhs6R62C9CXtSAMhXEd4MexA",
+        authDomain: "grocerystoreapp-c5c38.firebaseapp.com",
+        databaseURL: "https://grocerystoreapp-c5c38.firebaseio.com",
+        projectId: "grocerystoreapp-c5c38",
+        storageBucket: "",
+        messagingSenderId: "954510693481"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="app.js"></script>
+    <script src="store.js"></script>
+
+</html>

@@ -1,0 +1,33 @@
+#btnicon {
+  height: 90px;
+  width: 70px;
+}
+
+#titlebannerbox {
+  background-image: url("https://media.giphy.com/media/l0IylexlBwLj0Xi92/source.gif");
+  height: 20%;
+  width: auto;
+
+}
+
+#title {
+  color: black;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 2.5%;
+}
+
+#viewstoresboxcontent ul {
+  list-style: none;
+}
+
+#addordeletebox {
+  text-align: center;
+}
+#viewstoresbox {
+  text-align: center;
+}
+
+body {
+ background-color: #F2F2F2;
+}
