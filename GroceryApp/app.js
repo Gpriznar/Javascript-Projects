@@ -6,7 +6,7 @@ let allstoresUL = document.getElementById("allstoresUL")
 let database = firebase.database()
 
 let stores = []
-
+let storesRef = database.ref("store")
 
 database.ref("store")
 .on("child_removed",function(snapshot){
@@ -18,11 +18,26 @@ database.ref("store")
 
 database.ref("store")
 .on("child_added",function(snapshot){
-  let store = new Store(snapshot.key,snapshot.val().name)
+  let store = new Store(snapshot.key,snapshot.val().name,snapshot.val().item)
   stores.push(store)
 })
 
-// Add Button //
+database.ref("items")
+.on("child_added",function(snapshot){
+  let item = new Item(snapshot.key,snapshot.val().name,snapshot.val().item)
+  items.push(item)
+  displayItems()
+})
+
+database.ref("items")
+.on("child_removed",function(snapshot){
+    items = items.filter((item) => {
+      return item.key != snapshot.key
+    })
+    displayItems()
+})
+
+// Add Store Button //
 
 btnadd.addEventListener("click", function() {
 
@@ -48,9 +63,23 @@ function displayStores() {
     return `<li>
         ${store.name}
         <button onclick="deleteStore('${store.key}')">Delete Store</button>
+        <input id = "additem" type="text" placeholder="Item Name">
+        <button id = "addItemButton"> Add</button>
     </li>`
   })
   allstoresUL.innerHTML = storesLI.join("")
+
+  let addItemButton = document.getElementById("addItemButton")
+  let additem = document.getElementById("additem")
+
+  // Add Item to Store //
+
+  addItemButton.addEventListener('click', function() {
+  let itemsRef = storesRef.child("Items")
+  let itemRef = itemsRef.push({
+    item: additem.value
+})
+})
 }
 
 // Delete Store Function //
@@ -58,3 +87,5 @@ function displayStores() {
 function deleteStore(key) {
   database.ref("store").child(key).remove()
 }
+
+// Add Item to Store //
