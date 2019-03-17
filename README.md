@@ -24,4 +24,4 @@ The loose files are mostly recreations of my Python projects in order to learn J
 
     - Future updates would include a user login/password to save stored information and the ability to add items to specifi stores.
  
-* HackerNews: Website using an API in order to display news items with realtime updates.
+* HackerNews: Website using an API in order to display news items with realtime updates from https://news.ycombinator.com
